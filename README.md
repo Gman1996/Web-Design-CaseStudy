@@ -1,2 +1,2 @@
 # Web-Design-CaseStudy
-<h2>Responsive Web Design with HTML, CSS and Javascript</h2>
+<h3>Responsive Web Design with HTML, CSS and Javascript</h3>
