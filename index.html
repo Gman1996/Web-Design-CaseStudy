@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+    <div class="side-image">
+      <img class="avatar" src="images/avatar.jpg" />
+      <span>John Doe</span>
+    </div>
+    <ul class="side-options">
+      <a>
+        <li class="test">
+          <div class="logo">
+            <img src="images/ic-dashboard.svg" />
+          </div>
+          <div class="option">
+            Dashboard
+          </div>
+        </li>
+      </a>
+
+      <a>
+        <li>
+          <div class="logo">
+            <img src="images/ic-accounts.svg" />
+          </div>
+          <div class="option">
+            Accounts
+          </div>
+        </li>
+      </a>
+
+      <a>
+        <li class="active">
+          <div class="logo">
+            <img src="images/ic-cards.svg" />
+          </div>
+          <div class="option">
+            Cards
+          </div>
+        </li>
+      </a>
+
+      <a>
+        <li>
+          <div class="logo">
+            <img src="images/ic-payments.svg" />
+          </div>
+          <div class="option">
+            Payments
+          </div>
+        </li>
+      </a>
+
+      <a>
+        <li>
+          <div class="logo">
+            <img src="images/ic-transfers.svg" />
+          </div>
+          <div class="option">
+            Transfers
+          </div>
+        </li>
+      </a>
+
+      <a>
+        <li>
+          <div class="logo">
+            <img src="images/ic-airtime.svg" />
+          </div>
+          <div class="option">
+            Airtime
+          </div>
+        </li>
+      </a>
+
+      <a>
+        <li>
+          <div class="logo">
+            <img src="images/ic-settings.svg" />
+          </div>
+          <div class="option">
+            Settings
+          </div>
+        </li>
+      </a>
+
+    </ul>
+  </div>
+
+  <div id="main">
+    <div class="menu-bar">
+      <div class="burgerNav" id="button-click" onclick="openNav()">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+      <div class="menu-title">
+        Dashboard
+      </div>
+      <div class="fill"></div>
+      <div class="fill"></div>
+    </div>
+
+    <div class="banner">
+      <div class="upper-banner">
+        <div>Balance</div>
+        <div>N 979153.36</div>
+        <div>16.500 SP</div>
+        <div class="dot">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="lower-banner">
+      <div class="lower-title">Latest Transactions</div>
+    </div>
+
+    <div class="contain">
+      <div class="main-body">
+        <div class="first">
+          <div>
+            ATM Lagos
+          </div>
+          <div>
+            Today
+          </div>
+        </div>
+
+        <div class="second">
+          <div>
+            - N 450.00
+          </div>
+          <div>
+            Bank Withdraw
+          </div>
+        </div>
+      </div>
+
+      <div class="main-body even">
+        <div class="first">
+          <div>
+            ATM Lagos
+          </div>
+          <div>
+            Yesterday
+          </div>
+        </div>
+
+        <div class="second">
+          <div class="green">
+            + N 450.00
+          </div>
+          <div>
+            Bank Withdraw
+          </div>
+        </div>
+      </div>
+
+      <div class="main-body">
+        <div class="first">
+          <div>
+            003 645 6548 65
+          </div>
+          <div>
+            01/06/2015
+          </div>
+        </div>
+
+        <div class="second">
+          <div>
+            - 100 SP
+          </div>
+          <div>
+            Airtime recharge
+          </div>
+        </div>
+      </div>
+
+      <div class="main-body even">
+        <div class="first">
+          <div>
+            John Doe
+          </div>
+          <div>
+            31/05/2015
+          </div>
+        </div>
+
+        <div class="second">
+          <div class="green">
+            + N 450.00
+          </div>
+          <div>
+            Transfer
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script src="./script.js"></script>
+
+</html>

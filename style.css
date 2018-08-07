@@ -1,0 +1,271 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: Proxima;
+  src: url("fonts/ProximaNovaSoft-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: ProximaMedium;
+  src: url("fonts/ProximaNovaSoft-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Regular;
+  src: url("fonts/ProximaNovaSoft-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SemiBold;
+  src: url("fonts/ProximaNovaSoft-SemiBold.otf") format("opentype");
+}
+
+.banner {
+  background: #B36FE9;
+}
+
+.upper-banner {
+  font-family: SemiBold;
+  font-size: 32px;
+  color: #FFF;
+  padding: 20px
+}
+
+.upper-banner :nth-child(1) {
+  font-family: Regular;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.upper-banner :nth-child(3) {
+  font-size: 24px;
+}
+
+.upper-banner div {
+  padding: 10px;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dot span {
+  height: 12px;
+  width: 12px;
+  background-color: #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 1;
+}
+
+.dot :nth-child(2) {
+  opacity: 0.5;
+}
+
+.lower-banner {
+  font-family: ProximaMedium;
+  font-size: 14px;
+  background-color: #77439E;
+  color: #FFF;
+}
+
+.lower-title {
+  padding: 14px;
+}
+
+.even {
+  background-color: #F1F1F1;
+}
+
+.main-body {
+  display: flex;
+  padding: 15px;
+}
+
+.first, .second {
+  flex-grow: 1;
+}
+
+.first :nth-child(odd) {
+  font-family: SemiBold;
+  color: #959595;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.first :nth-child(even) {
+  font-family: ProximaMedium;
+  font-size: 14px;
+  color: #959595;
+  opacity: 0.6;
+}
+
+.second {
+  text-align: right;
+  font-family: SemiBold;
+}
+
+.main-body .second .green {
+  color: #16967A;
+}
+
+.second :nth-child(odd) {
+  font-family: SemiBold;
+  font-size: 16px;
+  color: #E44235;
+  margin-bottom: 5px;
+}
+
+.second :nth-child(even) {
+  font-family: ProximaMedium;
+  font-size: 14px;
+  color: #959595;
+}
+
+/* Menu Header */
+
+.menu-title {
+  font-family: Regular;
+  font-size: 20px;
+  color: #FFF;
+  margin: auto auto;
+  line-height: 100%;
+  flex-grow: 1;
+  width: 88%;
+  padding-right: 1%;
+  text-align: center;
+}
+
+.menu-bar {
+  height: 46px;
+  display: flex;
+  background-color: #77439E;
+  padding: 12px
+}
+
+.fill {
+  flex-grow: 1;
+}
+
+.burgerNav {
+  padding: 2px;
+  height: 28px;
+  width: 28px;
+  flex-grow: 1;
+  margin: auto 0;
+}
+
+.burgerNav div {
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  margin: 6px 0;
+  flex-grow: 1;
+}
+
+.burgerNav .one {
+  width: 25px;
+}
+
+.burgerNav .two {
+  width: 20px;
+}
+
+.burgerNav .three {
+  width: 15px;
+}
+
+/* The side navigation menu */
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin: 26% 7%;
+}
+
+.side-image {
+  background-image: url("images/menu-header-bg.png");
+  background-repeat: no-repeat;
+  height: 153px;
+  width: 100%;
+}
+
+.side-image span {
+  font-family: Regular;
+  font-size: 18px;
+  color: #FFF;
+  margin-left: -4.8%;
+}
+
+.side-options {
+  margin: 0;
+  padding: 0;
+}
+
+.side-options li {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  height: 55px;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  flex-grow: 1;
+  text-align: right;
+  margin: auto 0;
+}
+
+.active {
+  background-color: #ede3ef;
+}
+
+.option {
+  font-size: 16px;
+  font-family: Regular;
+  padding-left: 10px;
+  color: #8D52BA;
+  flex-grow: 7;
+  margin: auto 0;
+  line-height: inherit;
+}
+
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  overflow-x: hidden;
+  background-color: #FFF;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.opened {
+  width: 294px;
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+}
